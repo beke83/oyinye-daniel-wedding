@@ -1,11 +1,12 @@
-"use client"
-
-import React from 'react'
+import Rsvp from "@/components/rsvp/Rsvp";
+import React from "react";
 
 const page = () => {
   return (
-    <div>RSVP Page</div>
-  )
-}
+    <div>
+      <Rsvp />
+    </div>
+  );
+};
 
-export default page
+export default page;

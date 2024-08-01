@@ -17,7 +17,7 @@ module.exports = {
     extend: {
       colors: {
         green: {
-          50: "#30AF5B",
+          50: "#f0fdf4",
           90: "#292C27",
         },
         gray: {
@@ -43,6 +43,9 @@ module.exports = {
         "feature-bg": "url('/feature-bg.png')",
         pattern: "url('/pattern.png')",
         "pattern-2": "url('/pattern-bg.png')",
+      },
+      backgroundColor: {
+        green: '#1b3824'
       },
       screens: {
         xs: "320px",
