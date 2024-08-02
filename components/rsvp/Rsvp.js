@@ -76,7 +76,7 @@ const Rsvp = () => {
             setSuccessMessage(true);
 
             setTimeout(() => {
-              router.push(`/invite?attendance=${attendance}`)
+              router.push(`/invite`)
             }, 3000);
           })
           .catch((error) => {
