@@ -88,7 +88,9 @@ const Rsvp = () => {
       }
     } else if (confirmCode === false) {
       setErrorMessage(true);
+      setLoading(false)
     }
+    setLoading(false)
   };
 
   return (
