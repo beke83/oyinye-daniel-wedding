@@ -6,6 +6,12 @@ import Image from 'next/image'
 import Link from "next/link";
 // import { useSearchParams } from "next/navigation";
 
+export const metadata = {
+  title: "Access Card - Gift and Daniel's Tale",
+  // description: "Gift and Daniel's Wedding Website",
+};
+
+
 const page = () => {
 
   // const searchParams = useSearchParams();

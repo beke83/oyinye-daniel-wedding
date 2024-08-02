@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "Gift and Daniel's Tale",
-  // description: "Gift and Daniel's Wedding",
+  // description: "Gift and Daniel's Wedding Website",
 };
 
 export default function RootLayout({ children }) {
