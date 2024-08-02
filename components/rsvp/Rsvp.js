@@ -49,7 +49,7 @@ const Rsvp = () => {
   useEffect(() => {
     setTimeout(() => {
       setErrorMessage;
-    }, 3000);
+    }, 2000);
   }, [errorMessage]);
 
   const handleSubmit = async (e) => {
@@ -88,6 +88,10 @@ const Rsvp = () => {
     } else if (confirmCode === false) {
       setErrorMessage(true);
       setLoading(false)
+
+      setTimeout(() => {
+        setErrorMessage(false)
+      }, 5000)
     }
     setLoading(false)
   };
@@ -124,7 +128,7 @@ const Rsvp = () => {
           </div>
         </div>
 
-        <div className="relative md:flex mt-10 md:mt-10 md:items-center md:justify-center padding-container bg-green shadow-lg py-10 rounded-md opacity-90">
+        <div className="relative md:flex mt-10 md:mt-10 md:items-center md:justify-center padding-container bg-[#f09b83] shadow-lg py-10 rounded-md opacity-90">
           <Image
             className="center_flower_three"
             src="./flower3.svg"
@@ -171,7 +175,7 @@ const Rsvp = () => {
                     />
                   </div>
                 </div>
-                <label className="mt-2 block text-md font-medium leading-6 text-black md:text-black">
+                <label className="mt-3 block text-md font-medium leading-6 text-black md:text-black">
                   Invitation Code
                 </label>
                 <div className="mt-2">
@@ -236,7 +240,7 @@ const Rsvp = () => {
                 <button
                   type="submit"
                   onClick={handleSubmit}
-                  disabled={(attendance === true && willNotAttend === true) || loading}
+                  disabled={loading || invitationCode === '' || inviteName === '' || attendance === false && willNotAttend === false}
                   className="font-lato text-sm mt-12 px-7 py-3 rounded-md text-white bg-black w-full md:w-full"
                 >
                   {loading ? 'Validating code...' : 'R.S.V.P.'}

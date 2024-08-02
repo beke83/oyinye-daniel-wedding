@@ -4,10 +4,10 @@ import Navbar from "@/components/Navbar";
 
 // const lato = Lato({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Gift and Daniel's Tale",
-  // description: "Gift and Daniel's Wedding Website",
-};
+// export const metadata = {
+//   title: "Gift and Daniel's Tale",
+//   // description: "Gift and Daniel's Wedding Website",
+// };
 
 export default function RootLayout({ children }) {
   return (
