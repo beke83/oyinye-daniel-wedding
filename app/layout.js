@@ -5,8 +5,8 @@ import Navbar from "@/components/Navbar";
 // const lato = Lato({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Oyinye and Daniel's Wedding",
-  description: "Oyinye and Daniel's Wedding Website",
+  title: "Onyinye and Daniel's Wedding",
+  description: "Onyinye and Daniel's",
 };
 
 export default function RootLayout({ children }) {

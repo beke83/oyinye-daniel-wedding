@@ -58,7 +58,6 @@ const Rsvp = () => {
     const inviteCode = parseInt(invitationCode, 10);
     //check if invite code is correct
     const confirmCode = invitationCodes.includes(inviteCode);
-    console.log(confirmCode);
 
     if (confirmCode) {
       const formData = new FormData();
@@ -77,7 +76,7 @@ const Rsvp = () => {
 
             setTimeout(() => {
               router.push(`/invite`)
-            }, 3000);
+            }, 1000);
           })
           .catch((error) => {
             console.error("Error: ", error.message), alert(error.message);

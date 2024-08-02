@@ -1,0 +1,50 @@
+.responsive {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.center {
+  position: absolute;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.center_flower_three {
+  position: absolute;
+  margin: 0;
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.center_flower_two {
+  position: absolute;
+  margin: 0;
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.center_form {
+  position: absolute;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.border-box {
+  border: 1px solid red;
+}
+
+button:disabled {
+  background: #6d7077;
+}
